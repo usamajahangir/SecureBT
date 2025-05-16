@@ -5,37 +5,32 @@
     android:orientation="vertical"
     android:padding="16dp">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="BT Name"
-        android:textSize="16sp" />
-
     <EditText
         android:id="@+id/btNameInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Bluetooth Name" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Device MAC"
-        android:textSize="16sp"
-        android:layout_marginTop="16dp" />
-
-    <EditText
-        android:id="@+id/macAddressInput"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter MAC Address (e.g., 00:11:22:33:44:55)" />
+        android:hint="Enter Bluetooth Device Name"
+        android:inputType="text" />
 
     <Button
         android:id="@+id/connectButton"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Connect"
-        android:layout_marginTop="24dp"
-        android:layout_gravity="center" />
+        android:text="Connect to Device"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/discoverButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Discover Devices"
+        android:layout_marginTop="8dp" />
+
+    <ListView
+        android:id="@+id/deviceList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="8dp" />
 
 </LinearLayout>
